@@ -395,7 +395,7 @@
       border-radius: 14px; padding: 20px 16px; text-align: left; cursor: pointer;
       font-family: 'Roboto', sans-serif; font-size: 0.9rem; font-weight: 400;
       color: var(--color-on-surface); line-height: 1.5;
-      display: flex; align-items: flex-start; gap: 10px;
+      display: flex; align-items: center; gap: 10px;
       position: relative; overflow: hidden;
     }
     .answer-btn:hover:not(:disabled) {
@@ -416,7 +416,7 @@
       width: 26px; height: 26px; border-radius: 6px;
       background: var(--color-surface); color: var(--color-primary);
       display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 1px;
+      flex-shrink: 0;
     }
     .answer-btn.correct .answer-letter { background: var(--correct); color: #fff; }
     .answer-btn.wrong   .answer-letter { background: var(--wrong);   color: #fff; }
@@ -536,7 +536,7 @@
     .name-entry-sub {
       font-size: 0.9rem;
       color: var(--color-on-surface-muted);
-      margin-top: -12px;
+      margin-top: 6px;
     }
     .name-input-wrap {
       display: flex;
@@ -887,8 +887,10 @@
   <div class="screen" id="screen-name">
     <div class="name-entry-card">
       <div>
-        <div class="name-entry-title">🎉 Quiz complete!</div>
-        <div class="name-entry-sub">Enter your name to submit your score to the global leaderboard.</div>
+        <div>
+          <div class="name-entry-title">🎉 Quiz complete!</div>
+          <div class="name-entry-sub">Enter your name to submit your score to the global leaderboard.</div>
+        </div>
       </div>
       <div style="background:var(--color-surface-variant);border-radius:16px;padding:16px 20px;display:flex;gap:20px;flex-wrap:wrap">
         <div>
